@@ -1,25 +1,42 @@
 import React from 'react';
 // import { theme } from 'ui/theme';
 
+import jss from 'jss';
+import preset from 'jss-preset-default';
+jss.setup(preset());
+
+
 type Props = {
 };
 type State = {
 };
 
+const getStyle = (): any => {
+  const style = {
+    '& > a': {
+      fontSize: '14px',
+      display: 'block',
+      lineHeight: '21px',
+    }
+  };
+
+  return {
+    style,
+  };
+};
+
 class AwesomeLinks extends React.PureComponent<Props, State> {
-  getStyle() {
-    const ComponentStyle = {
-    };
-    return {
-      ComponentStyle,
-    };
-  }
   render() {
-    const style = this.getStyle();
-    //const {  } = this.props;
+    const sheet = jss.createStyleSheet(getStyle()).attach();
+    const { classes } = sheet;
+
     return (
-      <div style={style.ComponentStyle}>
-        <a href="https://github.com/btomashvili/awesome-ethereum" className="href">awesome-ethereum</a>
+      <div className={classes.style}>
+        <a href="https://ethclassic.ru/2017/11/08/kak-rabotayet-ethereum-1/" className="href">Как работает эфир часть 1?</a>
+        <a href="https://ethclassic.ru/2017/11/11/kak-rabotayet-ethereum-4/" className="href">Как работает эфир часть 4?</a>
+        <a href="https://github.com/ethereum/yellowpaper" className="href">Yellow book Ethereum?</a>
+        <a href="https://github.com/btomashvili/awesome-ethereum" className="href">Awesome Ethereum</a>
+        <a href="https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369" className="href">How does Ethereum work, anyway?</a>
       </div>
     );
   }
