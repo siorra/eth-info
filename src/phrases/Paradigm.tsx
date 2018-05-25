@@ -23,6 +23,10 @@ class Paradigm extends React.PureComponent<Props, State> {
         margin: '0',
         paddingBottom: '10px',
         paddingTop: '10px',
+      },
+      '& > img': {
+        paddingBottom: '10px',
+        paddingTop: '10px',
       }
     };
     return {
@@ -35,16 +39,22 @@ class Paradigm extends React.PureComponent<Props, State> {
 
     return (
       <div className={classes.style}>
-        <p>
-          Proof-of-Work (доказательство выполнения работы).
-        </p>
+        <h3>Парадигма блокчейна Эфириума</h3>
+        <p>Блокчейн Эфириума, по сути, является машиной состояний, функционирующей посредством транзакций. В компьютерных науках определение машины состояний подразумевает, что этот механизм считывает серию входных данных и, основываясь на них, переходит в новое состояние.</p>
+        <img src="https://ethclassic.files.wordpress.com/2017/11/1-hyjnpbo-_fqpgwhphrmrow.png?w=700" alt="" />
+        <img src="https://ethclassic.files.wordpress.com/2017/11/1-jz-vrxbjtonepofb0z2q8a1.png" alt="" />
+        <p>Состояние Эфириума включает в себя миллионы транзакций. Эти транзакции группируются в «блоки». Блок содержит группы транзакций и каждый блок связан с предыдущим, образуя цепочку.</p>
+        <img src="https://ethclassic.files.wordpress.com/2017/11/1-l_h58_pgm3xgwgoqlo9fvq1.png" alt="" />
+        <p><b>Для того чтобы транзакция была признана действительной, она должна пройти через процесс валидации (проверки и утверждения), известный как майнинг. </b></p>
+        <p>Для того чтобы добавить блок к основному блокчейну, майнер должен подтвердить его раньше других, конкурирующих с ним, майнеров. Процесс валидации каждого блока путём предоставления майнерами математического доказательства называется <b>Proof-of-Work (доказательство выполнения работы).</b></p>
 
         <p>“GHOST” = “Greedy Heaviest Observed Subtree” («Жадное и самое весомое видимое поддерево»)</p>
+        <img src="https://ethclassic.files.wordpress.com/2017/11/1-o1fldujhfl5yoruw0c0iva.png?w=700" alt="" />
         <img src="https://ethclassic.files.wordpress.com/2017/11/1-mzcujtezvgqstdypqow_vg1.png" alt="" />
 
         <p>
         Компоненты, из которых состоит система Эфириума:
-          <ol>
+          <ul>
             <li>
               счета (аккаунты)
             </li>
@@ -69,11 +79,14 @@ class Paradigm extends React.PureComponent<Props, State> {
             <li>
               Proof-of-Work
             </li>
-          </ol>
+          </ul>
         </p>
         <p>
           В Эфириуме используется хэш <a href="https://ethereum.stackexchange.com/questions/550/which-cryptographic-hash-function-does-ethereum-use">KECCAK-256</a>
         </p>
+
+        <h3>Another texts..</h3>
+
         <p>
           Блокчейн – это "криптографически защищённый одноэлементный механизм записи транзакций с совместно используемым состоянием"
         </p>

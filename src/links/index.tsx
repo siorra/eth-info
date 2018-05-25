@@ -37,6 +37,8 @@ class AwesomeLinks extends React.PureComponent<Props, State> {
         <a href="https://github.com/ethereum/yellowpaper" className="href">Yellow book Ethereum?</a>
         <a href="https://github.com/btomashvili/awesome-ethereum" className="href">Awesome Ethereum</a>
         <a href="https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369" className="href">How does Ethereum work, anyway?</a>
+        <a href="https://medium.com/bitcraft/so-you-want-to-build-an-ethereum-hd-wallet-cb2b7d7e4998" className="href">How to Build an Ethereum HD Wallet in node.js</a>
+
       </div>
     );
   }
