@@ -80,7 +80,8 @@ class Other extends React.PureComponent<Props, State> {
           <li>[Other]: Could indicate that your connected to a local development test network.</li>
         </ul>
 
-
+        <h3>etherscanApiToken</h3>
+        <p>As a developer, you will need to get an API key if you plan to push a lot more transactions once you have reached the limits. Without an API key, a rate limit of 5 requests/seconds is imposed so you may receive a HTTP 403 error if exceed this limit.</p>
 
       </div>
     );
